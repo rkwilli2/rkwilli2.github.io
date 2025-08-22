@@ -207,6 +207,7 @@ table.sched, tr.sched, th.sched, td.sched, td.course, td.help, td.meeting {
     }
     td.course {
         background:#336699;
+	color:#ffffff;
     }
     td.prepclass {
       background:#692337;
