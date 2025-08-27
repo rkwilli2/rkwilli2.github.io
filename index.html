@@ -2,6 +2,18 @@
 	<head>
 		<title> Webpage of Richard Williams </title>
 		<link rel="stylesheet" href="styles/index.css">
+
+		<script type="text/x-mathjax-config">
+    			MathJax.Hub.Config({
+      			jax: ["input/TeX", "output/HTML-CSS"],
+      			extensions: ["tex2jax.js"],
+      			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      			tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      			TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      			messageStyle: "none"
+    		});
+    		</script>    
+    		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 	</head>
 
 	<body>
@@ -19,7 +31,9 @@
 		<!--- NAV BAR -->
 		<div class="nav">
 		<ul style="font-variant: small-caps; font-weight: bold">
-			<li class="nav"> <a href="index.html">home</a> </li>
+			<li class="nav"><a href="index.html">home</a></li>
+			<li class="nav">|</li>
+			<li class="nav"><a href="resources.html">resources</a></li>
 		</ul>
 		</div>
 
@@ -30,7 +44,7 @@
 		<!--- SCHEDULE -->
 		<div class="left_col">
 		<div style="text-align:center; overflow-x:auto">
-		<table class="sched" style="margin: 0 auto">
+		<table class="sched" style="margin: 0 auto;">
 		<tbody>
 			<tr class="sched" style="background-color:#336699; color:#bcbcbc">	
 				<th class="sched" colspan="6">Weekly Schedule Fall 2025</th>
@@ -149,7 +163,7 @@
 				<th class="sched">1:00pm</th>
 				<td class="help">HELP</td>
 				<td class="course">MTH 548</td>
-				<td class="sched">HELP</td>
+				<td class="help">HELP</td>
 				<td class="course">MTH 548</td>
 				<td class="sched"></td>
 			</tr>
@@ -159,7 +173,7 @@
 				<th class="sched">1:30pm</th>
 				<td class="help">HELP</td>
 				<td class="course">MTH 548</td>
-				<td class="sched">HEP</td>
+				<td class="help">HELP</td>
 				<td class="course">MTH 548</td>
 				<td class="sched"></td>
 			</tr>
@@ -282,8 +296,7 @@
 		<!--- CONTACT -->
 		<div class="right_col">
 			<div style="text-align:center">
-				<!---	<img src="..." width="30%" alt="..."> -->
-				<img src="images/williams1.jpg" width="40%" alt="photo at Black Water Falls">
+				<img src="images/home/williams1.jpg" width="40%" alt="photo at Black Water Falls">
 				<br>
 				<span class="contact">Contact Information</span>
 				<br>

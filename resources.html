@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<title>Webpage of Richard Williams - Resources</title>
+		<link rel="stylesheet" href="styles/index.css">
+		<style>
+			.true { background-color:#00b140; color:#ffffff;}
+    			.false { background-color:#d92558; color:#ffffff;}
+
+    			table.logic {
+       				border-collapse: collapse;
+        			margin-left:auto;
+        			margin-right:auto;
+        			text-align: center;
+        			width: 40%;
+    			}
+
+    			table.logic th, table.logic td {
+        			border: 1px solid black;
+        			padding: 8px;
+				text-align: center;
+    			}
+		</style>
+
+		<script type="text/x-mathjax-config">
+    			MathJax.Hub.Config({
+      			jax: ["input/TeX", "output/HTML-CSS"],
+      			extensions: ["tex2jax.js"],
+      			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      			tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      			TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      			messageStyle: "none"
+    		});
+    		</script>    
+    		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+	</head>
+
+	<body>
+
+		<!--- UPPER LEFT -->
+		<div style="float:left; font-size:14px;"> 
+		</div>		
+
+		<!--- UPPER RIGHT -->
+		<div style="float:right">
+		</div>
+
+		<!--- NAV BAR -->
+		<div class="nav">
+		<ul style="font-variant: small-caps; font-weight: bold">
+			<li class="nav"><a href="index.html">home</a></li>
+			<li class="nav">|</li>
+			<li class="nav"><a href="resources.html">resources</a></li>
+		</ul>
+		</div>
+
+		<!--- RESOURCES -->
+		<!--- MTH 121 -->
+		<u><h2>MTH 121</h2></u>
+		<ul>
+		<li>Deductive Reasoning is General$\rightarrow$Specific, Inductive Reasoning is Specific$\rightarrow$General</li>
+		<li><p>Truth Tables for NOT, AND, OR, and IMPLIES</p></li><br>
+		<table class="logic" style="margin-left:auto;margin-right:auto;text-align:left">
+			<tbody>
+				<tr class="logic">
+					<th>$P$</td>
+					<th>$Q$</td>
+					<th>$\neg P$</td>
+					<th>$P\wedge Q$</td>
+					<th>$P\vee Q$</td>
+					<th>$P\rightarrow Q$</td>
+				</tr>
+				<tr class="logic">
+					<td class="true">T</td>
+					<td class="true">T</td>
+					<td class="false">F</td>
+					<td class="true">T</td>
+					<td class="true">T</td>
+					<td class="true">T</td>
+				</tr>
+				<tr class="logic">
+					<td class="true">T</td>
+					<td class="false">F</td>
+					<td class="false">F</td>
+					<td class="false">F</td>
+					<td class="true">T</td>
+					<td class="false">F</td>
+				</tr>
+				<tr class="logic">
+					<td class="false">F</td>
+					<td class="true">T</td>
+					<td class="true">T</td>
+					<td class="false">F</td>
+					<td class="true">T</td>
+					<td class="true">T</td>
+				</tr>
+				<tr class="logic">
+					<td class="false">F</td>
+					<td class="false">F</td>
+					<td class="true">T</td>
+					<td class="false">F</td>
+					<td class="false">F</td>
+					<td class="true">T</td>
+				</tr>
+			</tbody>
+		</table>
+		</ul>
+		<br>
+		<br>
+
+		<!--- MTH 127 -->
+		<u><h2>MTH 127</h2></u>
+		<ul>
+			<li><p>Function transformations</p><br>
+			<img src="images/resources/transformation-rules.png" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Function transformations"><br>Work inside out! Turn into $$af(b(x-c))+d,$$ Inner Translation → Inner Coefficient → Outer Coefficient → Outer Translation</li>
+		</ul>
+		<br>
+		<br>
+
+		<!--- MTH 220 -->
+		<u><h2>MTH 220</h2></u>
+		Nothing here yet!
+		<br>
+		<br>
+
+		<!--- MTH 229 -->
+		<u><h2>MTH 229</h2></u>	
+		Nothing here yet!
+		<br>
+		<br>
+
+		<!--- MTH 300 -->
+		<u><h2>MTH 300</h2></u>
+		Nothing here yet!
+		<br>
+		<br>
+
+		<!--- MTH 335 -->
+		<u><h2>MTH 335</h2></u>
+		<ul>
+			<li> An ordinary differential equation with solution $y(x)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x)y^{(i)}=g(x)$$ </li>
+			<li> A partial differential equation with solution $u(x_1,x_2,...,x_n)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x_1,x_2,...,x_n) \frac{\partial^i u}{\partial x_1^{b_{1,i}} \partial x_2^{b_{2,i}} ... \partial x_n^{b_{n,i}}}=g(x_1,x_2,...,x_n)$$ where $\forall i=0,1,2,...,n$, $\sum_{j=1}^n b_{j,i} = i$. If this is too messy, so long as you're not multiplying derivatives together or taking sines/cosines of $u$ and any derivative of $u$, it will probably be linear. Manipulate the equation if you're ever unsure!</li>
+		</ul>
+		<br>
+		<br>
+	</body>
+</html>
