@@ -111,7 +111,17 @@
 		<u><h2>MTH 127</h2></u>
 		<ul>
 			<li><p>Function transformations</p><br>
-			<img src="images/resources/transformation-rules.png" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Function transformations"><br>Work inside out! Turn into $$af(b(x-c))+d,$$ Inner Translation → Inner Coefficient → Outer Coefficient → Outer Translation</li>
+			<img src="images/resources/transformation-rules.png" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Function transformations"><br>Work inside out! Turn into $$af(b(x-c))+d,$$ Inner Translation → Inner Coefficient → Outer Coefficient → Outer Translation</li><br>
+
+			<li><p><u>Midpoint</u> of $(x_0,y_0),(x_1,y_1)$ is given by $$\left(\frac{x_0+x_1}{2},\frac{y_0+y_1}{2}\right)$$ and the <u>distance</u> $d$ is given by $$d=\sqrt{(x_0-x_1)^2+(y_0-y_1)^2}.$$</p></li><br>
+			
+			<li><p><u>Intervals</u> are lenghts described by their endpoints. Whenever the endpoint is included (a filled dot), we use square brackets. Whenever the endpoint is not included (an open dot), we use parenthesis. When one endpoint is $\infty$ or $-\infty$, we generally use parenthesis since we cannot realistically reach that endpoint.</p><br>
+			<img src="images/resources/interval-notation.png" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Interval notation"><br></li>
+
+			<li>The <u>average rate of range</u> of a function $f$ in the interval $[a,b]$ is given by $$\frac{f(b)-f(a)}{b-a}.$$</li><br>
+
+			<li> <u>Even functions</u> have the property that $f(-x)=f(x)$<br><br><u>Odd functions</u> have the property that $f(-x)=-f(x)$.</li><br>
+
 		</ul>
 		<br>
 		<br>
@@ -124,7 +134,25 @@
 
 		<!--- MTH 229 -->
 		<u><h2>MTH 229</h2></u>	
-		Nothing here yet!
+		<ul>		
+			<li><p>The <u>derivative</u> of a function $f$ at $x=a$ is $$f'(a)=\lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}$$</p></li><br>
+
+			<li><p>We talked about funny stuff that happens with the <u><a href="https://en.wikipedia.org/wiki/Axiom_of_choice">axiom of choice</a></u> during one meeting for entertainment. The axiom of choice "loosely" states $$\text{For any nonempty set, we can make a choice function } f \text{ that maps this set to an element of that set, our "chosen element".}$$ Here are some problems when you accept this axiom:</p>
+			<ul>
+				<li><p>You can prove that there are disjoint subsets $A,B$ of $\mathbb{R}$ where the "length" (more specifically, the outer measure) of $A\cup B$ is not equal to the sum of the length of $A$ and length of $B$. You learn more about this in the topic of measure theory. Almost all of measure theory can be thrown out the window without choice!</p></li>
+				<li><p>Often, it is used to prove that things exist that cannot explicitly be constructed. We cannot explicitly construct $A,B$ in above, but we know they exist! This is seen by many as a philisophical problem.</p></li>
+
+				<li><p>The <u><a href="https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox">Banach-Tarski Paradox</a></u> is a consequence of the axiom of choice that says that we can cut up a sphere into some finite number of pieces and move them around to make two copies of the sphere of equal volume.</p></li>
+			</ul>
+			<p>Similarly, when you reject this axiom:</p>
+			<ul>
+				<li><p>You can no longer choose certain items from a set casually. It becomes mathematically not guaranteed that you can make a function to describe which sock from a pair you want to put on first one morning.</p></li>
+				<!---<li><p>Without the axiom of choice, you can split up a set into more patitions than the original had elements! <a href="https://arxiv.org/pdf/1910.14480">"How to have more things by forgetting how to count them"</a>, see Lemma 6.10. In summary of the proof, even though $A$ has no countably infinite subset (i.e, it's Dedekind-finite), its finite subsets can be enough in number that the set $[A]^{<\omega}$ is Dedkind-infinite, informally saying "there are more finite subsets than elements". Big words and big definitions, but very interesting and unintuitive claim!</p></li> -->
+				<li><p>You can make an infinite cardinality smaller than $\aleph_0$, the number of integers.</p></li>
+			</ul>
+
+			<p>Many more neat consequences of rejecting/accepting can be found <u><a href="https://mitpress.mit.edu/9780262542234/">here</a></u>. If you're interested seeing excerpts from the book or learning more, let me know!</u></p>
+		</ul>
 		<br>
 		<br>
 
