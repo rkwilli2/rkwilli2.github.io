@@ -21,17 +21,20 @@
     			}
 		</style>
 
-		<script type="text/x-mathjax-config">
-    			MathJax.Hub.Config({
-      			jax: ["input/TeX", "output/HTML-CSS"],
-      			extensions: ["tex2jax.js"],
-      			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
-      			tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
-      			TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
-      			messageStyle: "none"
-    		});
-    		</script>    
-    		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+		<script>
+  			window.MathJax = {
+    				loader: {
+      					load: ['[tex]/physics']
+    				},
+    				tex: {
+      					inlineMath: [['$', '$'], ['\\(', '\\)']],
+      					packages: { '[+]': ['physics'] }
+    				}
+  			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
 	</head>
 
 	<body>
@@ -108,7 +111,11 @@
 			<li>When you convert units... <ul>
 				<li>Start by making a path from the units you have to the units you want. For example, when going from seconds to years,$$\text{second }\rightarrow\text{ minute }\rightarrow\text{ hour }\rightarrow\text{ day }\rightarrow\text{ year}$$</li>
 				<li>Take the units you have and, using the conversion factor, multiply by a fraction with the unit you want on top (according to our path) and your current units on the bottom. $$30\text{ sec} \left(\frac{1 \text{ min}}{60\text{ sec}}\right)\left(\frac{1\text{ hr}}{60\text{ min}}\right)\left(\frac{1\text{ day}}{24\text{ hr}}\right)\dotsc$$</li>
-			</ul></li>
+			</ul></li><br>
+
+			<li>A great place to practice scientific notation can be found <a href="https://www.khanacademy.org/science/hs-chemistry/x2613d8165d88df5e:stoichiometry-and-the-mole/x2613d8165d88df5e:moles-and-molar-mass/a/scientific-notation-review"> here</a>. While it is a chemistry article, the guide of working with powers of 10 is incredibly useful.</li><br>
+
+			<img src="images/resources/prefix_chart.png" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Prefix chart for unit conversions">
 		</ul>
 		<br>
 		<br>
@@ -145,7 +152,7 @@
 
 			<li><p>We talked about funny stuff that happens with the <u><a href="https://en.wikipedia.org/wiki/Axiom_of_choice">axiom of choice</a></u> during one meeting for entertainment. The axiom of choice "loosely" states $$\text{For any nonempty set, we can make a choice function } f \text{ that maps this set to an element of that set, our "chosen element".}$$ Here are some problems when you accept this axiom:</p>
 			<ul>
-				<li><p>You can prove that there are disjoint subsets $A,B$ of $\mathbb{R}$ where the "length" (more specifically, the outer measure) of $A\cup B$ is not equal to the sum of the length of $A$ and length of $B$. You learn more about this in the topic of measure theory. Almost all of measure theory can be thrown out the window without choice!</p></li>
+				<li><p>You can prove that there are disjoint subsets $A,B$ of $\mathbb{R}$ where the "length" (more specifically, the outer measure) of $A\cup B$ is not equal to the sum of the length of $A$ and length of $B$. You learn more about this in the topic of measure theory. Almost all of measure theory can be thrown out the window without choice, since we jump through many hoops of definitions and criteria to have $\mu(A\cup B)=\mu(A)+\mu(B)$</p></li>
 				<li><p>Often, it is used to prove that things exist that cannot explicitly be constructed. We cannot explicitly construct $A,B$ in above, but we know they exist! This is seen by many as a philisophical problem.</p></li>
 
 				<li><p>The <u><a href="https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox">Banach-Tarski Paradox</a></u> is a consequence of the axiom of choice that says that we can cut up a sphere into some finite number of pieces and move them around to make two copies of the sphere of equal volume.</p></li>
@@ -171,8 +178,14 @@
 		<!--- MTH 335 -->
 		<u><h2>MTH 335</h2></u>
 		<ul>
-			<li> An ordinary differential equation with solution $y(x)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x)y^{(i)}=g(x)$$ </li>
-			<li> A partial differential equation with solution $u(x_1,x_2,...,x_n)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x_1,x_2,...,x_n) \frac{\partial^i u}{\partial x_1^{b_{1,i}} \partial x_2^{b_{2,i}} ... \partial x_n^{b_{n,i}}}=g(x_1,x_2,...,x_n)$$ where $\forall i=0,1,2,...,n$, $\sum_{j=1}^n b_{j,i} = i$. If this is too messy, so long as you're not multiplying derivatives together or taking sines/cosines of $u$ and any derivative of $u$, it will probably be linear. Manipulate the equation if you're ever unsure!</li>
+			<li> An ordinary differential equation with solution $y(x)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x)y^{(i)}=g(x).$$ </li><br>
+
+			<li> A partial differential equation with solution $u(x_1,x_2,...,x_n)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x_1,x_2,...,x_n) \frac{\partial^i u}{\partial x_1^{b_{1,i}} \partial x_2^{b_{2,i}} ... \partial x_n^{b_{n,i}}}=g(x_1,x_2,...,x_n),$$ where $\forall i=0,1,2,...,n$, $\sum_{j=1}^n b_{j,i} = i$. If this is too messy, so long as you're not multiplying derivatives together or taking sines/cosines of $u$ and any derivative of $u$, it will probably be linear. Manipulate the equation if you're ever unsure!</li><br>
+
+			<li> A linear ordinary differential equation of order $n$ has a unique solution on the interval $I$ when it can be written in the form $$y^{(n)} + \sum_{i=1}^{n-1}a_i(t)y^{(i)}=f(t)$$ when all $a_i(t)$ and $f(t)$ are continuous on $I$. The interval of existence/uniqueness, when given an initial value $y(t_0)=y_0$, is the maximal interval of existence $I_0$ where $t_0\in I_0$.</li><br>
+
+			<li> An ordinary differential equation with solution $y(t)$ is called <i>separable</i> if it can be written as $$\frac{\dd y}{\dd t}=g(t)h(y).$$ The solution method is as follows: \begin{align*} \dd y&=g(t)h(y) \dd t \\[3mm] \frac{\dd y}{h(y)} &= g(t)\dd t \\[3mm] \int \frac{\dd y}{h(y)} &= \int g(t)\dd t \end{align*}Solving for $y$ from here will give you a solution.</li><br>
+			
 		</ul>
 		<br>
 		<br>
