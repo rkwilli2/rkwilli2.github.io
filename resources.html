@@ -53,6 +53,8 @@
 			<li class="nav"><a href="index.html">home</a></li>
 			<li class="nav">|</li>
 			<li class="nav"><a href="resources.html">resources</a></li>
+			<li class="nav">|</li>
+			<li class="nav"><a href="about_me.html">about me</a></li>
 		</ul>
 		</div>
 
@@ -133,9 +135,24 @@
 
 			<li>The <u>average rate of range</u> of a function $f$ in the interval $[a,b]$ is given by $$\frac{f(b)-f(a)}{b-a}.$$</li><br>
 
-			<li> <u>Even functions</u> have the property that $f(-x)=f(x)$<br><br><u>Odd functions</u> have the property that $f(-x)=-f(x)$.</li><br>
+			<li><u>Even functions</u> have the property that $f(-x)=f(x)$<br><br><u>Odd functions</u> have the property that $f(-x)=-f(x)$.</li><br>
 
+			<li>When given $f(x)=ax^2+bx+c$, you can turn it into vertex with the process below and get a formula! \begin{align*} f(x) &= ax^2+bx+c \\ &= a\left(x^2 + \frac{b}{a}x\right) + c \\ &= a\left( x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2 \right) + c \\ &= a\left( \left(x+\frac{b}{2a} \right)^2 - \left(\frac{b}{2a}\right)^2 \right)+c \\ &= a\left(x+\frac{b}{2a}\right)^2 - \frac{ab^2}{4a^2}+c \\ &= a\left(x+\frac{b}{2a}\right)^2 - \frac{b^2}{4a} + c \end{align*}<br>Notice the equation is now in vertex form, $f(x)=a(x-h)^2 + k$ where $(h,k)$ is the vertex and $$h=-\frac{b}{2a}\quad\quad\text{and}\quad\quad k=-\frac{b^2}{4a}+c.$$</li><br>
+
+			<li>When you're given the vertex form $f(x)=a(x-h)^2+k$ and need to produce the standard form, just multiply it out! \begin{align*} f(x) &= a(x-h)^2 + k \\ &= a(x^2-2hx+h^2)+k \\ &= ax^2 -2ahx + ah^2 + k \\ &= ax^2 -2ahx + (ah^2+k)\end{align*}</li><br>
+
+			<li>Here's the steps to find the quadratic formula if you're interested! \begin{align*} ax^2+bx+c&=0 \\ x^2+\frac{b}{a}x+\frac{c}{a}&=0 \\ x^2+\frac{b}{a}x&=-\frac{c}{a} \\ x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2 &= -\frac{c}{a} + \left(\frac{b}{2a}\right)^2 \\ \left(x+\frac{b}{2a}\right)^2 &= -\frac{c}{a}+\frac{b^2}{4a^2} = \frac{b^2-4ac}{4a^2} \\ x+\frac{b}{2a} &= \pm\sqrt{\frac{b^2-4ac}{4a^2}} \\ &= \pm\frac{\sqrt{b^2-4ac}}{2a} \\ x &= -\frac{b}{2a} \pm \frac{\sqrt{b^2-4ac}}{2a} \\ &= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \end{align*}</li>
 		</ul>
+		<br>
+		<br>
+
+		<!--- MTH 140 -->
+		<u><h2>MTH 140</h2></u>
+			<li>To find the derivative of a function at a point $c$, you evaluate the limit $$f'(c)=\lim_{h\rightarrow 0} \frac{f(c+h)-f(c)}{h}.$$</li><br>
+
+			<li><b><u>Example</u>: </b>Let $f(x)=3x^2-5x+7$. Find $f'(11)$.<br><br> We start with the limit definition and substitute $x=11+h$ and $x=11$ into $f(x)$. \begin{align*} f(11+h) &= 3(11+h)^2 - 5(11+h)+7 \\ &= 3(11^2+2(11)(h)+h^2) - 5(11+h)+7 \\ &= 3(121+22h+h^2)-5(11+h)+7\\ &= 363+66h+3h^2-55-5h+7 \\ &= 315+61h+3h^2 \\[5mm] f(11) &= 3(11)^2-5(11)+7 \\ &= 3(121)-55+7 \\ &= 363-55+7 \\ &= 315.\end{align*}Now lets plug that result into our limit! \begin{align*} f'(11) &= \lim_{h\rightarrow 0} \frac{f(11+h)-f(11)}{h} \\ &= \lim_{h\rightarrow 0} \frac{(315+61h+3h^2)-(315)}{h} \\ &= \lim_{h\rightarrow 0} \frac{61h+3h^2}{h} \\ &= \lim_{h\rightarrow 0} 61+3h \\ &= 61 \end{align*}</li><br>
+
+			<li>To avoid plugging in values for every point we want a derivative of, we often compute it without plugging in a specific $x$.<br><br><b><u>Example</u>: </b>$g(x)=x^2+3x$. Find $g'(x)$.<br><br> We use the same limit definition and directly substitute. \begin{align*}g'(x) &= \lim_{h\rightarrow 0} \frac{g(x+h)-g(x)}{h} \\ &= \lim_{h\rightarrow 0} \frac{\big((x+h)^2 + 3(x+h)\big) - (x^2+3x)}{h} \\ &= \lim_{h\rightarrow 0} \frac{(x^2+2xh+h^2+3x+3h) -x^2-3x}{h} \\ &= \lim_{h\rightarrow 0} \frac{2xh+h^2+3h}{h} \\ &= \lim_{h\rightarrow 0} 2x+h+3 \\ &= 2x+3 \end{align*}We could now use this to find the derivative of $g$ at any $x$ value we like. Try verifying it works for $g'(-3/2)$. <br><br>I prefer to do it this way because, as seen in the previous example, putting in explicit values can lead to numbers in the equation that are not so easy to deal with when you cannot use a calculator.</li><br>
 		<br>
 		<br>
 
@@ -164,7 +181,7 @@
 				<li><p>You can make an infinite cardinality smaller than $\aleph_0$, the number of integers.</p></li>
 			</ul>
 
-			<p>Many more neat consequences of rejecting/accepting can be found <u><a href="https://mitpress.mit.edu/9780262542234/">here</a></u>. If you're interested seeing excerpts from the book or learning more, let me know!</u></p>
+			<p>Many more neat consequences of rejecting/accepting can be found <u><a href="https://mitpress.mit.edu/9780262542234/">here</a></u>. If you're interested seeing excerpts from the book or learning more, let me know!</li></p><br>
 		</ul>
 		<br>
 		<br>
@@ -180,12 +197,22 @@
 		<ul>
 			<li> An ordinary differential equation with solution $y(x)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x)y^{(i)}=g(x).$$ </li><br>
 
-			<li> A partial differential equation with solution $u(x_1,x_2,...,x_n)$ is <i>linear</i> if it can be written as $$\sum_{i=0}^n a_i(x_1,x_2,...,x_n) \frac{\partial^i u}{\partial x_1^{b_{1,i}} \partial x_2^{b_{2,i}} ... \partial x_n^{b_{n,i}}}=g(x_1,x_2,...,x_n),$$ where $\forall i=0,1,2,...,n$, $\sum_{j=1}^n b_{j,i} = i$. If this is too messy, so long as you're not multiplying derivatives together or taking sines/cosines of $u$ and any derivative of $u$, it will probably be linear. Manipulate the equation if you're ever unsure!</li><br>
 
 			<li> A linear ordinary differential equation of order $n$ has a unique solution on the interval $I$ when it can be written in the form $$y^{(n)} + \sum_{i=1}^{n-1}a_i(t)y^{(i)}=f(t)$$ when all $a_i(t)$ and $f(t)$ are continuous on $I$. The interval of existence/uniqueness, when given an initial value $y(t_0)=y_0$, is the maximal interval of existence $I_0$ where $t_0\in I_0$.</li><br>
 
-			<li> An ordinary differential equation with solution $y(t)$ is called <i>separable</i> if it can be written as $$\frac{\dd y}{\dd t}=g(t)h(y).$$ The solution method is as follows: \begin{align*} \dd y&=g(t)h(y) \dd t \\[3mm] \frac{\dd y}{h(y)} &= g(t)\dd t \\[3mm] \int \frac{\dd y}{h(y)} &= \int g(t)\dd t \end{align*}Solving for $y$ from here will give you a solution.</li><br>
+			<li> An ordinary differential equation with solution $y(t)$ is called <i>separable</i> if it can be written as $$\frac{\dd y}{\dd t}=g(t)h(y).$$ </li><br>
+
+			<li><b>THE FIRST STEPS OF SOLVING A DIFFERENTIAL EQUATION:</b> Identify identify identify! Once you identify the type of ODE, you get the solution method. Practice just identifying different ODEs - you need to be at the point where it becomes almost immediate recognition to succeed in the course!</li><br>
+
+			<li>If you have a separable ODE $$\frac{\dd y}{\dd t}=g(t)h(y),\quad y(t_0)=y_0$$, you use the following method: \begin{align*} \dd y&=g(t)h(y) \dd t \\[3mm] \frac{\dd y}{h(y)} &= g(t)\dd t \\[3mm] \int \frac{\dd y}{h(y)} &= \int g(t)\dd t \end{align*} Solving for $y$ from here with give you a general solution, then use your initial condition to solve for you constant term.</li><br>
 			
+			<li>If you have a nonseparable linear 1st-order ODE $$y'+p(t)y=q(t),\quad y(t_0)=y_0,$$ the solution method is to find an <i>integrating factor</i> $$\mu(t) = e^{\int p(t)\dd t} = \exp\left(\int p(t) \dd t\right).$$ Notice that $\mu'(t)=p(t)\mu(t)$. Now we multiply by $\mu(t)$, \begin{align*} y'+p(t)y&= q(t) \\ \mu(t)y'+ p(t)\mu(t)y &= \mu(t)q(t) \\ \mu(t)y' + \mu'(t)y &=\mu(t)q(t) \\ \frac{\dd}{\dd t}\left[\mu(t)y\right] &= \mu(t)q(t) \\ \mu(t)y &= \int \mu(t)q(t)\dd t \\ y &= \frac{1}{\mu(t)}\int \mu(t)q(t)\dd t. \end{align*}Plugging in initial conditions for the general solution produced here solves the ODE.</li><br>
+
+			<li>If you have a linear 2nd-order homogenous ODE $$ay'' + by' + cy = 0,\quad y(t_0)=y_0,\quad y'(t_1)=y_1$$ where $a,b,c$ are constant, the solution method is to "assume what the solution looks like", called an <i>ansatz</i>. For these problems, our ansatz is $$y(t)=e^{\lambda t}.$$ Taking derivatives of $y$, we also get \begin{align*} y'(t) &= \lambda e^{\lambda t} \\ y''(t) &= \lambda^2 e^{\lambda t}. \end{align*} By substituting our $y, y', y''$, we have \begin{align*} ae^{\lambda t} + b\lambda e^{\lambda t} + c\lambda^2 e^{\lambda t}&=0 \\ a + b\lambda + c\lambda^2 &= 0 \end{align*} This a quadratic! Generally you'll only have real $\lambda$, but if you get a complex $\lambda$, worry ONLY about the real parts of $\lambda$. There are two cases - you have 1 or 2 unique $\lambda$.<br><br> <u><i>For one unique</i></u> $\lambda$, the solution $y$ takes the form $$y(t)=\left(C_1 + C_2\lambda\right)e^{\lambda t}.$$ Use your initial conditions to find $C_1, C_2$ with simultaneous systems of equations.<br><br> <u><i>For two unique</i></u> $\lambda$, the solution $y$ takes the form of a linear combination of your ansatz, being $$y(t)=C_1 e^{\lambda_1 t} + C_2 e^{\lambda_2 t}.$$ Use initial conditions to find your $C_1, C_2$ with simultaneous systems of equations.</li><br>
+
+			<li>The Laplace transform is defined as $$\mathcal{L}\{f\}(s) = \int_0^\infty f(t)e^{-st} \dd t.$$ You should make sure you know how to compute these! The inverse transform requires <a href="https://en.wikipedia.org/wiki/Inverse_Laplace_transform#Mellin's_inverse_formula">contour integration</a> and I don't expect this to be covered in class. Singularities as describe there are, simply put, complex $s$ that make $F(s)$ undefined. Thus, to compute and invert the most common functions, refer to the table below. The hardest part is making the form of the function match!</li><br>
+
+			<img src="images/resources/laplace_table.jpg" width="60%" style="margin-left:auto;margin-right:auto;display:block;" alt="Laplace Table"><br>
 		</ul>
 		<br>
 		<br>
