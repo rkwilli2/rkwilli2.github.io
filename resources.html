@@ -26,13 +26,24 @@
     				loader: {
       					load: ['[tex]/physics']
     				},
-    				tex: {
+   				tex: {
       					inlineMath: [['$', '$'], ['\\(', '\\)']],
+      					displayMath: [['$$', '$$']],
       					packages: { '[+]': ['physics'] }
+    				},
+    				chtml: {
+      					scale: 1.2,
+      					matchFontHeight: true
+    				},
+    				options: {
+      					renderActions: {
+        					addMenu: []
+      					}
     				}
   			};
 		</script>
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 
 
 	</head>
@@ -153,6 +164,8 @@
 			<li><b><u>Example</u>: </b>Let $f(x)=3x^2-5x+7$. Find $f'(11)$.<br><br> We start with the limit definition and substitute $x=11+h$ and $x=11$ into $f(x)$. \begin{align*} f(11+h) &= 3(11+h)^2 - 5(11+h)+7 \\ &= 3(11^2+2(11)(h)+h^2) - 5(11+h)+7 \\ &= 3(121+22h+h^2)-5(11+h)+7\\ &= 363+66h+3h^2-55-5h+7 \\ &= 315+61h+3h^2 \\[5mm] f(11) &= 3(11)^2-5(11)+7 \\ &= 3(121)-55+7 \\ &= 363-55+7 \\ &= 315.\end{align*}Now lets plug that result into our limit! \begin{align*} f'(11) &= \lim_{h\rightarrow 0} \frac{f(11+h)-f(11)}{h} \\ &= \lim_{h\rightarrow 0} \frac{(315+61h+3h^2)-(315)}{h} \\ &= \lim_{h\rightarrow 0} \frac{61h+3h^2}{h} \\ &= \lim_{h\rightarrow 0} 61+3h \\ &= 61 \end{align*}</li><br>
 
 			<li>To avoid plugging in values for every point we want a derivative of, we often compute it without plugging in a specific $x$.<br><br><b><u>Example</u>: </b>$g(x)=x^2+3x$. Find $g'(x)$.<br><br> We use the same limit definition and directly substitute. \begin{align*}g'(x) &= \lim_{h\rightarrow 0} \frac{g(x+h)-g(x)}{h} \\ &= \lim_{h\rightarrow 0} \frac{\big((x+h)^2 + 3(x+h)\big) - (x^2+3x)}{h} \\ &= \lim_{h\rightarrow 0} \frac{(x^2+2xh+h^2+3x+3h) -x^2-3x}{h} \\ &= \lim_{h\rightarrow 0} \frac{2xh+h^2+3h}{h} \\ &= \lim_{h\rightarrow 0} 2x+h+3 \\ &= 2x+3 \end{align*}We could now use this to find the derivative of $g$ at any $x$ value we like. Try verifying it works for $g'(-3/2)$. <br><br>I prefer to do it this way because, as seen in the previous example, putting in explicit values can lead to numbers in the equation that are not so easy to deal with when you cannot use a calculator.</li><br>
+
+			<li>Here is the problem you wanted me to put here from our meeting on Oct 6!<br><br>Find the derivative of $f(x)=3x-8x^2+8$. \begin{align*} f'(x) &= \lim_{h\rightarrow 0} \frac{f(x+h)-f(x)}{h} \\ &= \lim_{h\rightarrow 0}\frac{\left[3(x+h)-8(x+h)^2+8\right]-(3x-8x^2+8)}{h} \\ &= \lim_{h\rightarrow 0} \frac{\left[3x+3h-8(x^2+2xh+h^2)+8\right]-3x+8x^2-8}{h} \\ &= \lim_{h\rightarrow 0} \frac{3x+3h-8x^2-16xh-8h^2+8-3x+8x^2-8}{h} \\ &= \lim_{h\rightarrow 0} \frac{3h-16xh-8h^2}{h} \\ &= \lim_{h\rightarrow 0} 3-16x-8h \\ &= 3-16x \end{align*}
 		<br>
 		<br>
 
