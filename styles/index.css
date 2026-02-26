@@ -105,31 +105,28 @@ body{
   opacity:.85;
 }
 
-
 /* ============= TABLE SCALING SYSTEM ================ */
 .table-scale{
   width:100%;
-  overflow-x:auto;
-  display:flex;
-  justify-content:center;
 }
 
+/* KEY FIXES BELOW */
 table{
   width:100%;
   border-collapse:collapse;
   table-layout:fixed;
-  font-size:clamp(.55rem, 1.5vw, .9rem);
+  font-size:clamp(.45rem, 2.2vw, .9rem); /* more aggressive scaling */
 }
 
 th, td{
   border:1px solid var(--grid);
-  padding:clamp(.2rem, .8vw, .5rem);
+  padding:clamp(.15rem, .6vw, .4rem); /* tighter padding */
   text-align:center;
-  word-wrap:break-word;
+  word-break:break-word;
 }
 
 th.time{
-  width:clamp(55px, 10vw, 90px);
+  width:clamp(40px, 8vw, 80px); /* narrower time column */
   background:#f7f7f7;
 }
 
@@ -167,7 +164,6 @@ td.nosched{
   }
 
   .links{
-    margin-left:0;
     margin-top:1rem;
   }
 
@@ -175,7 +171,4 @@ td.nosched{
     font-size:1rem;
   }
 
-  table{
-    min-width:650px; /* prevents ugly squeezing */
-  }
 }
