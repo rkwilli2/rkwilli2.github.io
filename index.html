@@ -1,364 +1,108 @@
-<html>
-	<head>
-		<title> Webpage of Richard Williams </title>
-		<link rel="stylesheet" href="styles/index.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webpage of Richard Williams</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
 
-		
-		<script>
-  			window.MathJax = {
-    				loader: {
-      					load: ['[tex]/physics']
-    				},
-   				tex: {
-      					inlineMath: [['$', '$'], ['\\(', '\\)']],
-      					displayMath: [['$$', '$$']],
-      					packages: { '[+]': ['physics'] }
-    				},
-    				chtml: {
-      					scale: 1.2,
-      					matchFontHeight: true
-    				},
-    				options: {
-      					renderActions: {
-        					addMenu: []
-      					}
-    				}
-  			};
-		</script>
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-	</head>
+<body>
 
-	<body>
+<header class="navbar">
+  <nav class="nav-center">
+    <a href="index.html">Home</a>
+    <span class="sep">|</span>
+    <a href="resources.html">Resources</a>
+    <span class="sep">|</span>
+    <a href="about_me.html">About Me</a>
+  </nav>
+</header>
 
-		<!--- UPPER LEFT -->
-		<div style="float:left; font-size:14px;"> 
-		</div>
+<main class="container">
 
-		<!--- UPPER RIGHT -->
-		<div style="float:right">
-		</div>
-			<a href="./files/CV_williams.pdf">
-				<img src="./images/icon/cvicon.jpg" height="16" alt="cv icon">
-			</a>
-		<br>
+  <section class="top">
+    <img src="images/home/williams1.jpg" class="photo" alt="Photo">
 
-		<!--- NAV BAR -->
-		<div class="nav">
-		<ul style="font-variant: small-caps; font-weight: bold">
-			<li class="nav"><a href="index.html">home</a></li>
-			<li class="nav">|</li>
-			<li class="nav"><a href="resources.html">resources</a></li>
-			<li class="nav">|</li>
-			<li class="nav"><a href="about_me.html">about me</a></li>
-		</ul>
-		</div>
+    <div class="profile-text">
+      <h1 class="name">Richard Williams</h1>
 
-		<!--- FUN FACT -->
-		<div class="wrapper">
-		</div>
+      <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:williams1433@marshall.edu" class="email">williams1433@marshall.edu</a></p>
+        <p><strong>Office:</strong> Myers Hall 150</p>
+        <p><strong>Phone:</strong> (304) 516-6067</p>
+      </div>
+    </div>
 
-		<!--- SCHEDULE -->
-		<div class="left_col">
-		<div style="text-align:center; overflow-x:auto">
-		<table class="sched" style="margin: 0 auto;">
-		<tbody>
-			<tr class="sched" style="background-color:#336699; color:#bcbcbc">	
-				<th class="sched" colspan="6">Weekly Schedule Fall 2025</th>
-			</tr>		
-			<tr class="sched">
-				<td> </td>
-				<td><b>Monday</b></td>
-				<td><b>Tuesday</b></td>
-				<td><b>Wednesday</b></td>
-				<td><b>Thursday</b></td>
-				<td><b>Friday</b></td>
-			</tr>
+    <!-- Academic Links -->
+    <div class="links">
+      <a href="files/2026cv.pdf" target="_blank">
+        <img src="images/icons/cvicon.jpg" alt="CV">
+      </a>
 
-			<!--- 8 -->
-			<tr class="sched">
-				<th class="sched">8:00am</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
+      <a href="https://github.com/rkwilli2" target="_blank">
+        <img src="images/icons/githubicon.png" alt="Github">
+      </a>
 
-			<!--- 8:30 -->
-			<tr class="sched">
-				<th class="sched">8:30am</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
+      <a href="https://www.researchgate.net/profile/Richard-Williams-101" target="_blank">
+        <img src="images/icons/researchgateicon.ico" alt="ResearchGate">
+      </a>
+    </div>
+  </section>
 
-			<!--- 9 -->
-			<tr class="sched">
-				<th class="sched">9:00am</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP LC</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
+  <h2 id="title"></h2>
 
-			<!--- 9:30 -->
-			<tr class="sched">
-				<th class="sched">9:30am</th>
-				<td class="sched"></td>
-				<td class="course">STA 546</td>
-				<td class="help">HELP LC</td>
-				<td class="course">STA 546</td>
-				<td class="sched"></td>
-			</tr>
+  <div class="table-scale">
+    <table id="schedule-table"></table>
+  </div>
 
-			<!--- 10 -->
-			<tr class="sched">
-				<th class="sched">10:00am</th>
-				<td class="meeting">C</td>
-				<td class="course">STA 546</td>
-				<td class="help">HELP AE</td>
-				<td class="course">STA 546</td>
-				<td class="help">HELP AE</td>
-			</tr>		
+  <section class="important">
+    <h2>Important Dates</h2>
+    <ul id="dates"></ul>
+  </section>
 
-			<!--- 10:30 -->
-			<tr class="sched">
-				<th class="sched">10:30am</th>
-				<td class="meeting">C</td>
-				<td class="course">STA 546</td>
-				<td class="help">HELP AE</td>
-				<td class="course">STA 546</td>
-				<td class="help">HELP AE</td>
-			</tr>
-		
-			<!--- 11 -->
-			<tr class="sched">
-				<th class="sched">11:00am</th>
-				<td class="meeting">C</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP MM</td>
-				<td class="sched"></td>
-			</tr>
+</main>
 
-			<!--- 11:30 -->
-			<tr class="sched">
-				<th class="sched">11:30am</th>
-				<td class="meeting">C</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP MM</td>
-				<td class="sched"></td>
-			</tr>
+<script src="files/schedule.js"></script>
 
-			<!--- 12 -->
-			<tr class="sched">
-				<th class="sched">12:00pm</th>
-				<td class="course">MTH 635</td>
-				<td class="sched"></td>
-				<td class="course">MTH 635</td>
-				<td class="sched"></td>
-				<td class="course">MTH 635</td>
-			</tr>			
+<script>
+  const data = scheduleData;
 
-			<!--- 12:30 -->
-			<tr class="sched">
-				<th class="sched">12:30pm</th>
-				<td class="course">MTH 635</td>
-				<td class="course">MTH 615</td>
-				<td class="course">MTH 635</td>
-				<td class="course">MTH 615</td>
-				<td class="course">MTH 635</td>
-			</tr>
+  document.getElementById("title").textContent = data.title;
 
-			<!--- 1 -->
-			<tr class="sched">
-				<th class="sched">1:00pm</th>
-				<td class="help">HELP JH</td>
-				<td class="course">MTH 615</td>
-				<td class="sched"></td>
-				<td class="course">MTH 615</td>
-				<td class="help">HELP JH</td>
-			</tr>
+  const table = document.getElementById("schedule-table");
 
-			<!--- 1:30 -->
-			<tr class="sched">
-				<th class="sched">1:30pm</th>
-				<td class="help">HELP JH</td>
-				<td class="course">MTH 615</td>
-				<td class="sched"></td>
-				<td class="course">MTH 615</td>
-				<td class="help">HELP JH</td>
-			</tr>
+  // Header row
+  const header = document.createElement("tr");
+  header.innerHTML =
+    `<th class="time"></th>` +
+    data.days.map(d => `<th>${d}</th>`).join("");
+  table.appendChild(header);
 
-			<!--- 2 -->
-			<tr class="sched">
-				<th class="sched">2:00pm</th>
-				<td class="help">HELP MM</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP MB</td>
-				<td class="help">HELP DW/AD</td>
-			</tr>
+  // Rows
+  Object.entries(data.rows).forEach(([time, cols]) => {
+    const tr = document.createElement("tr");
 
-			<!--- 2:30 -->
-			<tr class="sched">
-				<th class="sched">2:30pm</th>
-				<td class="help">HELP MM</td>
-				<td class="sched"></td>
-				<td class="meeting">S</td>
-				<td class="help">HELP MB</td>
-				<td class="help">HELP DW/AD</td>
-			</tr>
+    tr.innerHTML =
+      `<th class="time">${time}</th>` +
+      data.days.map(day => {
+        const cell = cols[day];
+        const text = cell ? cell.text : "";
+        const type = cell ? cell.type : "sched";
+        return `<td class="${type}">${text}</td>`;
+      }).join("");
 
+    table.appendChild(tr);
+  });
 
-			<!--- 3 -->
-			<tr class="sched">
-				<th class="sched">3:00pm</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP LC</td>
-				<td class="help">HELP GS</td>
-			</tr>
+  // Important dates
+  const ul = document.getElementById("dates");
+  data.importantDates.forEach(d => {
+    const li = document.createElement("li");
+    li.textContent = d;
+    ul.appendChild(li);
+  });
+</script>
 
-			<!--- 3:30 -->
-			<tr class="sched">
-				<th class="sched">3:30pm</th>
-				<td class="help">HELP LM</td>
-				<td class="help">HELP LM</td>
-				<td class="help">HELP LM</td>
-				<td class="help">HELP LC</td>
-				<td class="help">HELP GS</td>
-			</tr>
-
-			<!--- 4 -->
-			<tr class="sched">
-				<th class="sched">4:00pm</th>
-				<td class="help">HELP LM</td>
-				<td class="help">HELP LM</td>
-				<td class="help">HELP LM</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
-
-			<!--- 4:30 -->
-			<tr class="sched">
-				<th class="sched">4:30pm</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP AM</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
-
-			<!--- 5 -->
-			<tr class="sched">
-				<th class="sched">5:00pm</th>
-				<td class="help">HELP LJ</td>
-				<td class="sched"></td>
-				<td class="help">HELP AM</td>
-				<td class="help">HELP LJ</td>
-				<td class="sched"></td>
-			</tr>	
-
-			<!--- 5:30 -->
-			<tr class="sched">
-				<th class="sched">5:30pm</th>
-				<td class="help">HELP LJ</td>
-				<td class="sched"></td>
-				<td class="help">HELP GS</td>
-				<td class="help">HELP LJ</td>
-				<td class="sched"></td>
-			</tr>		
-
-			<!--- 6 -->
-			<tr class="sched">
-				<th class="sched">6:00pm</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="help">HELP GS</td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
-
-			<!--- 6:30 -->
-			<tr class="sched">
-				<th class="sched">6:30pm</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>		
-
-			<!--- 7 -->
-			<tr class="sched">
-				<th class="sched">7:00pm</th>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-				<td class="sched"></td>
-			</tr>
-		</tbody>	
-		</table>		
-		</div>
-		</div>
-
-		<!--- CONTACT -->
-		<div class="right_col">
-			<div style="text-align:center">
-				<img src="images/home/williams1.jpg" width="40%" alt="photo at Black Water Falls">
-				<br>
-				<span class="contact">Contact Information</span>
-				<br>
-				<table class="contact" style="margin-left:auto;margin-right:auto;text-align:left;">
-					<tbody>
-						<tr>
-							<th>email:</th>
-							<td>
-								<span style="font-family:monospace;">
-									williams1433@marshall.edu </span>
-							</td>
-						</tr>
-						<tr>
-							<th>office:</th>
-							<td>Myers Hall 150</td>
-						</tr>
-						<tr>
-							<th>phone:</th>
-							<td>(304) 516-6067</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-
-		<br>
-		
-
-		<!--- DATES -->
-		<h1><u>Important Dates</u></h1>
-		<ul>
-			<li> <s>(2025 Aug 24) Fri Oct 22 9:30am HELP moved to Virtual @ 2pm</s> </li>
-			<li> <s>(2025 Oct 17-19) AMS 2025 Fall Central Sectional Meeting. St. Louis, MO</s></li>
-			<ul style="list-style-type:none"> 
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;<s>Fri Oct 17 2:00pm HELP moved to 11:45am-12:45pm</s></li> 
-			</ul>
-		<ul>		
-
-
-		<!--- RWD -->
-		<center>
-		<div style="max-width:220pt">
-			<div style="background-color:black">
-				<font size="-3"></font>
-			</div>
-		</div>
-		</center>
-	</body>
+</body>
 </html>

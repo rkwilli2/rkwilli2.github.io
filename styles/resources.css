@@ -1,0 +1,57 @@
+:root{
+  --marshall-green:#00B140;
+
+  --class-blue:#cfe8ff;
+  --meeting-red:#ffd6d6;
+  --help-green:#d9f2d9;
+  --nosched:#222;
+  --sched:#ffffff;
+
+  --grid:#e5e5e5;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:#222;
+  background:white;
+}
+
+/* ================== NAVBAR ==================*/
+.navbar{
+  padding:.75rem 0;
+  border-bottom:1px solid var(--grid);
+}
+
+.nav-center{
+  text-align:center;
+  font-size:1.2rem;
+}
+
+.nav-center a{
+  color:#222;
+  text-decoration:none;
+  margin:0 .4rem;
+  padding:.2rem .5rem;
+  border-radius:4px;
+  transition: background .25s;
+}
+
+.nav-center a:hover{
+  background:var(--marshall-green);
+  color:white;
+}
+
+.sep{
+  color:#888;
+  margin:0 .2rem;
+}
+
+/* ========== BASE FOR PAGE ============== */
+.container{
+  max-width:1100px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
