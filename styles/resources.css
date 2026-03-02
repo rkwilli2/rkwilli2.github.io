@@ -4,6 +4,7 @@
   --class-blue:#cfe8ff;
   --meeting-red:#ffd6d6;
   --help-green:#d9f2d9;
+  --privt-purple:#f2d9f7;
   --nosched:#222;
   --sched:#ffffff;
 
@@ -21,11 +22,13 @@ body{
 
 /* ================== NAVBAR ==================*/
 .navbar{
-  padding:.75rem 0;
   border-bottom:1px solid var(--grid);
 }
 
 .nav-center{
+  max-width:1100px;
+  margin:0 auto;
+  padding:.75rem 1rem;
   text-align:center;
   font-size:1.2rem;
 }

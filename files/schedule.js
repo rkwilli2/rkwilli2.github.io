@@ -120,14 +120,14 @@ const scheduleData = {
 			"Monday":    { text: "LM",	type: "help" 	},
 			"Tuesday":   { text: "LM",	type: "help" 	},
 			"Wednesday": { text: "LM",	type: "help" 	},
-			"Thursday":  { text: "",	type: "sched" 	},
+			"Thursday":  { text: "CF",	type: "priv_t" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"4:30pm": {
 			"Monday":    { text: "",	type: "sched" 	},
 			"Tuesday":   { text: "",	type: "sched" 	},
 			"Wednesday": { text: "AM",	type: "help" 	},
-			"Thursday":  { text: "",	type: "sched" 	},
+			"Thursday":  { text: "CF",	type: "priv_t" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"5:00pm": {

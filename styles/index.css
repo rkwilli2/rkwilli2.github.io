@@ -4,6 +4,7 @@
   --class-blue:#cfe8ff;
   --meeting-red:#ffd6d6;
   --help-green:#d9f2d9;
+  --privt-purple:#f2d9f7;
   --nosched:#222;
   --sched:#ffffff;
 
@@ -134,6 +135,7 @@ th.time{
 td.class{ background:var(--class-blue); }
 td.meeting{ background:var(--meeting-red); }
 td.help{ background:var(--help-green); }
+td.priv_t{ background:var(--privt-purple); }
 td.sched{ background:var(--sched); }
 td.nosched{
   background:var(--nosched);
