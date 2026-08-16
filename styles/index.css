@@ -2,11 +2,12 @@
   --marshall-green:#00B140;
 
   --class-blue:#cfe8ff;
-  --meeting-red:#ffd6d6;
   --help-green:#d9f2d9;
-  --privt-purple:#f2d9f7;
+  --meeting-red:#f0605d;
   --nosched:#222;
+  --privt-purple:#f2d9f7;
   --sched:#ffffff;
+  --teach-orange:#fab966;
 
   --grid:#e5e5e5;
 }
@@ -133,14 +134,12 @@ th.time{
 
 /* ================= TABLE COLORS ================= */
 td.class{ background:var(--class-blue); }
-td.meeting{ background:var(--meeting-red); }
 td.help{ background:var(--help-green); }
+td.meeting{ background:var(--meeting-red); }
+td.nosched{ background:var(--nosched); color:white; }
 td.priv_t{ background:var(--privt-purple); }
 td.sched{ background:var(--sched); }
-td.nosched{
-  background:var(--nosched);
-  color:white;
-}
+td.teach{ background:var(--teach-orange); }
 
 /* IMPORTANT DATES */
 .important{
