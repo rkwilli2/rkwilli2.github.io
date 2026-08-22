@@ -50,14 +50,14 @@ const scheduleData = {
 			"Monday":    { text: "ND",	type: "help" 	},
 			"Tuesday":   { text: "TB",	type: "help" 	},
 			"Wednesday": { text: "",	type: "sched"	},
-			"Thursday":  { text: "DS",	type: "help" 	},
+			"Thursday":  { text: "",	type: "sched" 	},
 			"Friday":    { text: "",	type: "sched"	}	
 		},
 		"11:30am": {
 			"Monday":    { text: "ND",	type: "help" 	},
 			"Tuesday":   { text: "TB",	type: "help" 	},
 			"Wednesday": { text: "",	type: "sched"	},
-			"Thursday":  { text: "DS",	type: "help" 	},
+			"Thursday":  { text: "",	type: "sched" 	},
 			"Friday":    { text: "",	type: "sched"	}	
 		},
 		"12:00pm": {
@@ -86,14 +86,14 @@ const scheduleData = {
 			"Tuesday":   { text: "STA 661",	type: "class" 	},
 			"Wednesday": { text: "",	type: "sched" 	},
 			"Thursday":  { text: "STA 661",	type: "class" 	},
-			"Friday":    { text: "",	type: "sched" 	}	
+			"Friday":    { text: "DS",	type: "help" 	}	
 		},
 		"2:00pm": {
 			"Monday":    { text: "MTH 670",	type: "class" 	},
 			"Tuesday":   { text: "LJ",	type: "help" 	},
 			"Wednesday": { text: "AG",	type: "help" 	},
 			"Thursday":  { text: "MTH 670",	type: "class" 	},
-			"Friday":    { text: "",	type: "sched" 	}	
+			"Friday":    { text: "DS",	type: "help" 	}	
 		},
 		"2:30pm": {
 			"Monday":    { text: "MTH 670",	type: "class" 	},
@@ -131,17 +131,17 @@ const scheduleData = {
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"5:00pm": {
-			"Monday":    { text: "CA",	type: "help" 	},
+			"Monday":    { text: "",	type: "sched" 	},
 			"Tuesday":   { text: "DB",	type: "help" 	},
-			"Wednesday": { text: "",	type: "sched" 	},
-			"Thursday":  { text: "",	type: "sched" 	},
+			"Wednesday": { text: "CA",	type: "help" 	},
+			"Thursday":  { text: "PS",	type: "help" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"5:30pm": {
-			"Monday":    { text: "CA",	type: "help" 	},
+			"Monday":    { text: "",	type: "sched" 	},
 			"Tuesday":   { text: "DB",	type: "help" 	},
-			"Wednesday": { text: "",	type: "sched" 	},
-			"Thursday":  { text: "",	type: "sched" 	},
+			"Wednesday": { text: "CA",	type: "help" 	},
+			"Thursday":  { text: "PS",	type: "help" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"6:00pm": {
