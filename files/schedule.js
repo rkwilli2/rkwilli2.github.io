@@ -51,35 +51,35 @@ const scheduleData = {
 			"Tuesday":   { text: "TB",	type: "help" 	},
 			"Wednesday": { text: "",	type: "sched"	},
 			"Thursday":  { text: "",	type: "sched" 	},
-			"Friday":    { text: "",	type: "sched"	}	
+			"Friday":    { text: "Lunch",	type: "nosched"	}	
 		},
 		"11:30am": {
 			"Monday":    { text: "ND",	type: "help" 	},
 			"Tuesday":   { text: "TB",	type: "help" 	},
-			"Wednesday": { text: "",	type: "sched"	},
+			"Wednesday": { text: "Lunch",	type: "nosched"	},
 			"Thursday":  { text: "",	type: "sched" 	},
-			"Friday":    { text: "",	type: "sched"	}	
+			"Friday":    { text: "Office/R",type: "help"	}	
 		},
 		"12:00pm": {
-			"Monday":    { text: "",	type: "sched" 	},
+			"Monday":    { text: "Lunch",	type: "nosched" },
 			"Tuesday":   { text: "Lunch",	type: "nosched" },
 			"Wednesday": { text: "LR",	type: "help" 	},
 			"Thursday":  { text: "Lunch",	type: "nosched" },
-			"Friday":    { text: "",	type: "sched" 	}	
+			"Friday":    { text: "Office/R",type: "help"	}	
 		},
 		"12:30pm": {
 			"Monday":    { text: "",	type: "sched" 	},
 			"Tuesday":   { text: "STA 661",	type: "class" 	},
 			"Wednesday": { text: "LR",	type: "help" 	},
 			"Thursday":  { text: "STA 661",	type: "class" 	},
-			"Friday":    { text: "",	type: "sched" 	}	
+			"Friday":    { text: "LJ",	type: "help" 	}	
 		},
 		"1:00pm": {
 			"Monday":    { text: "",	type: "sched" 	},
 			"Tuesday":   { text: "STA 661",	type: "class" 	},
 			"Wednesday": { text: "",	type: "sched" 	},
 			"Thursday":  { text: "STA 661",	type: "class" 	},
-			"Friday":    { text: "",	type: "sched" 	}	
+			"Friday":    { text: "LJ",	type: "help" 	}	
 		},
 		"1:30pm": {
 			"Monday":    { text: "",	type: "sched" 	},
@@ -90,43 +90,43 @@ const scheduleData = {
 		},
 		"2:00pm": {
 			"Monday":    { text: "MTH 670",	type: "class" 	},
-			"Tuesday":   { text: "LJ",	type: "help" 	},
+			"Tuesday":   { text: "",	type: "sched" 	},
 			"Wednesday": { text: "AG",	type: "help" 	},
 			"Thursday":  { text: "MTH 670",	type: "class" 	},
 			"Friday":    { text: "DS",	type: "help" 	}	
 		},
 		"2:30pm": {
 			"Monday":    { text: "MTH 670",	type: "class" 	},
-			"Tuesday":   { text: "LJ",	type: "help" 	},
+			"Tuesday":   { text: "",	type: "sched" 	},
 			"Wednesday": { text: "AG",	type: "help" 	},
 			"Thursday":  { text: "MTH 670",	type: "class" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"3:00pm": {
-			"Monday":    { text: "Lab",	type: "priv_t" 	},
+			"Monday":    { text: "M&S Lab",	type: "priv_t" 	},
 			"Tuesday":   { text: "",	type: "sched" 	},
-			"Wednesday": { text: "Lab",	type: "priv_t" 	},
+			"Wednesday": { text: "M&S Lab",	type: "priv_t" 	},
 			"Thursday":  { text: "MTH 670",	type: "class" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"3:30pm": {
-			"Monday":    { text: "Lab",	type: "priv_t" 	},
+			"Monday":    { text: "M&S Lab",	type: "priv_t" 	},
 			"Tuesday":   { text: "MTH 643",	type: "class" 	},
-			"Wednesday": { text: "Lab",	type: "priv_t" 	},
+			"Wednesday": { text: "M&S Lab",	type: "priv_t" 	},
 			"Thursday":  { text: "MTH 643",	type: "class" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"4:00pm": {
-			"Monday":    { text: "Lab",	type: "priv_t" 	},
+			"Monday":    { text: "M&S Lab",	type: "priv_t" 	},
 			"Tuesday":   { text: "MTH 643",	type: "class" 	},
-			"Wednesday": { text: "Lab",	type: "priv_t" 	},
+			"Wednesday": { text: "M&S Lab",	type: "priv_t" 	},
 			"Thursday":  { text: "MTH 643",	type: "class" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"4:30pm": {
-			"Monday":    { text: "Lab",	type: "priv_t" 	},
+			"Monday":    { text: "M&S Lab",	type: "priv_t" 	},
 			"Tuesday":   { text: "MTH 643",	type: "class" 	},
-			"Wednesday": { text: "Lab",	type: "priv_t" 	},
+			"Wednesday": { text: "M&S Lab",	type: "priv_t" 	},
 			"Thursday":  { text: "MTH 643",	type: "class" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
@@ -146,21 +146,21 @@ const scheduleData = {
 		},
 		"6:00pm": {
 			"Monday":    { text: "",	type: "sched" 	},
-			"Tuesday":   { text: "",	type: "sched" 	},
+			"Tuesday":   { text: "XXXXX",	type: "nosched" },
 			"Wednesday": { text: "",	type: "sched" 	},
 			"Thursday":  { text: "",	type: "sched" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"6:30pm": {
 			"Monday":    { text: "",	type: "sched" 	},
-			"Tuesday":   { text: "",	type: "sched" 	},
+			"Tuesday":   { text: "XXXXX",	type: "nosched" },
 			"Wednesday": { text: "",	type: "sched" 	},
 			"Thursday":  { text: "",	type: "sched" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
 		},
 		"7:00pm": {
 			"Monday":    { text: "",	type: "sched" 	},
-			"Tuesday":   { text: "",	type: "sched" 	},
+			"Tuesday":   { text: "XXXXX",	type: "nosched" },
 			"Wednesday": { text: "",	type: "sched" 	},
 			"Thursday":  { text: "",	type: "sched" 	},
 			"Friday":    { text: "",	type: "sched" 	}	
